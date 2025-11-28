@@ -1,0 +1,75 @@
+<!-- index.html -->
+<p>把暫存區的變更存成一個版本（commit）。</p>
+<pre><code class="code">git commit -m "寫下這次變更的說明"</code></pre>
+</article>
+
+
+<!-- PUSH -->
+<article class="cmd-card">
+<div class="icon">🚀</div>
+<h3>git push</h3>
+<p>把本地的 commit 傳到遠端（例如 GitHub）。</p>
+<pre><code class="code">git push origin main</code></pre>
+</article>
+
+
+<!-- PULL -->
+<article class="cmd-card">
+<div class="icon">⬇️</div>
+<h3>git pull</h3>
+<p>從遠端抓最新變更並合併到本地分支。</p>
+<pre><code class="code">git pull origin main</code></pre>
+</article>
+
+
+<!-- REVERT -->
+<article class="cmd-card">
+<div class="icon">↩️</div>
+<h3>git revert</h3>
+<p>用新的 commit 來回復先前 commit 的變更（安全，不會改歷史）。</p>
+<pre><code class="code">git revert &lt;commit-hash&gt;</code></pre>
+</article>
+
+
+<!-- CHECKOUT -->
+<article class="cmd-card">
+<div class="icon">🔀</div>
+<h3>git checkout</h3>
+<p>切換分支或檔案到某個 commit 的狀態。</p>
+<pre><code class="code">git checkout -b feature-x
+git checkout main</code></pre>
+</article>
+
+
+<!-- MERGE (user wrote MERGET — 我這裡示範為 MERGE) -->
+<article class="cmd-card">
+<div class="icon">🧩</div>
+<h3>git merge</h3>
+<p>把另一個分支的變更合入目前分支。</p>
+<pre><code class="code">git checkout main
+git merge feature-x</code></pre>
+</article>
+</section>
+
+
+<section id="download" class="card full">
+<h2>下載與使用</h2>
+<p>把 <code>index.html</code>, <code>styles.css</code>, <code>script.js</code> 存成檔案，放到同一個資料夾即可用瀏覽器開啟。</p>
+<ol>
+<li>在 GitHub 建一個新 repository（public 或 private）。</li>
+<li>把三個檔案加入並 commit。</li>
+<li>推到遠端：<code>git push origin main</code></li>
+</ol>
+<p class="hint">需要我幫你把這三個檔案打包成 zip 嗎？或需要我直接產生 GitHub 用的一鍵上傳指令範例？</p>
+</section>
+</main>
+
+
+<footer class="footer">
+<p>Made with ❤️ by 萌萌 Git 教室 — Happy branching!</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
